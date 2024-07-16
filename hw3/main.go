@@ -31,13 +31,13 @@ func main() {
 		c := a + b
 		return c
 	}
-	println(adder)
+	println(adder(10, 20))
 
 	concatenator := func(a, b string) string {
 		c := a + b
 		return c
 	}
-	println(concatenator("Hi", "Haw are you"))
+	println(concatenator("Hi ", "Haw are you"))
 
 	isPositive := func(a int) bool {
 		if a > 0 {
