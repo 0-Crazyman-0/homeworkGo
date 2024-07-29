@@ -1,8 +1,8 @@
 package main
 
-// import (
-// 	"fmt"
-// )
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -40,8 +40,8 @@ func main() {
 
 	// 5.	Напишите программу, которая находит наибольший общий делитель (НОД) двух чисел, используя алгоритм Евклида.
 
-	// var a int = 4
-	// var b int = 512
+	// var a int = 8
+	// var b int = 64
 	// for b != 0 {
 	// 	a %= b
 	// 	if a == 0 {
@@ -165,10 +165,10 @@ func main() {
 	// 	var a int = 1
 	// 	for j := 0; j <= i; j++ {
 	// 		if j == 0 || j == i {
-	// 			fmt.Println(1, " ")
+	// 			fmt.Printf("%d ", 1)
 	// 		} else {
 	// 			b := a + a
-	// 			fmt.Println(b, " ")
+	// 			fmt.Printf("%d ", b)
 	// 			a = b
 	// 		}
 	// 	}
@@ -260,11 +260,11 @@ func main() {
 
 	// 23.	Напишите программу, которая бесконечно запрашивает у пользователя ввод числа и прекращает выполнение, если введенное число делится на 7.
 
-	// 	for {
-	// 		var a int
-	// 		fmt.Scan(&a)
-	// 		if a%7 == 0 {
-	// 			break
-	// 		}
-	// 	}
+	for {
+		var a int
+		fmt.Scan(&a)
+		if a%7 == 0 {
+			break
+		}
+	}
 }
