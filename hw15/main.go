@@ -165,6 +165,7 @@ func main() {
 		return
 	}
 	fmt.Println("JSON data successfully written to output.json")
+	//10
 }
 
 // 1. Сериализация структуры в JSON
@@ -184,7 +185,7 @@ type Person struct {
 type Person1 struct {
 	Name  string `json:"name"`
 	Age   int    `json:"age"`
-	Email string `json:"email"`
+	Email string `json:"email,omitemety"`
 }
 
 // 3. Сериализация карты в JSON
@@ -268,10 +269,10 @@ type Product1 struct {
 // Описание: Напишите программу, которая десериализует JSON-строку в структуру,
 // игнорируя неизвестные поля.
 // Структура:
-// type Person struct {
-//  Name string `json:"name"`
-//  Age int `json:"age"`
-// }
+type Person4 struct {
+ Name string `json:"name"`
+ Age int `json:"age"`
+}
 // 11. Форматирование JSON-вывода
 // Описание: Напишите программу, которая сериализует структуру в JSON с
 // отступами для улучшения читаемости.

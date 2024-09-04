@@ -255,6 +255,19 @@ func (ti TextInserter) InsertAfterWord(word, substring string) string {
 // •	Методы:
 // •	IsPalindrome() bool для проверки, является ли строка палиндромом.
 // •	IsWordPalindrome() bool для проверки, является ли строка палиндромом по словам.
+
+type PalindromeChecker interface {
+	IsPalindrome() bool
+	IsWordPalindrome() bool
+}
+type TextPalindromeChecker struct {
+	Text string
+}
+
+// func (pr TextPalindromeChecker)IsPalindrome()bool{
+
+// }
+
 // 10. Удаление повторяющихся слов
 // •	Описание: Реализуйте интерфейс DuplicateRemover с методами RemoveDuplicates() и RemoveDuplicatesCaseInsensitive(). Реализуйте структуру TextDuplicateRemover, которая работает со строками и реализует этот интерфейс.
 // •	Методы:

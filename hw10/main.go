@@ -41,8 +41,7 @@ func main() {
 	totalValue := inventory.TotalValue()
 	fmt.Printf("Общая стоимость товаров в инвентаре: $%.2f\n", totalValue)
 	//5
-	t := AddTransaction(150.75, "Grocery shopping")
-	t.Process()
+
 	//6
 	taskList := TaskList{}
 	taskList.AddTask("Complete Go project")
@@ -205,19 +204,6 @@ func (inv Inventory) TotalValue() float64 {
 // •	Методы:
 // •	Process()
 // •	AddTransaction(amount float64, description string)
-
-type Transaction struct {
-	Amount      float64
-	Description string
-}
-
-func (t Transaction) Process() {
-	fmt.Printf("Transaction: %s, Amount: %.2f\n", t.Description, t.Amount)
-}
-
-func AddTransaction(amount float64, description string) Transaction {
-	return Transaction{Amount: amount, Description: description}
-}
 
 // 6.	Управление задачами
 // •	Описание: Реализуйте структуру Task с полями title и completed. Реализуйте структуру TaskList с срезом задач и методы для добавления задачи и получения количества завершённых задач.

@@ -38,7 +38,7 @@ func main() {
 		"loshad":   6,
 		"krakadil": 7,
 	}
-	obevlen1(strilen3, "loshad2", 7)
+	obevlen1(strilen3, "loshad", 7)
 	for str, length := range strilen3 {
 		fmt.Printf("Строка: %s, Длина: %d\n", str, length)
 	}
